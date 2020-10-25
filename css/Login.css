@@ -1,51 +1,70 @@
 *{
-	margin:0;
+	margin: 0;
 	padding: 0;
 }
-.cajaLogin{
-	height: 100%;
-	width: 100%;
-	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
-	background-position: center;
-	background-size: cover;
-	position: absolute;
 
+body{
+	height: auto;
+	width: 100%;
+	background-image: url(https://concurvas.com/wp-content/themes/mainteam_Concurvas/imagenes/fondos/bloque1.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0px 70px;
+	position: absolute;
+	background-color: #F2F2F2;
 }
+
 .form{
 	width: 380px;
-	height: 480px;
+	height: 380px;
 	position: relative;
-	margin:6% auto;
-	background: #fff;
+	margin: auto;
+	margin-top: 120px;
+	background: rgba(219,219,219, 0.75);
 	padding: 5px;
 }
+
+#logoForm{
+	position: absolute;
+	width: 250px;
+	margin-top: -80px;
+	margin-left: 18px;
+}
+
 .cajaEP{
 	left: 50px;
 	top: 120px;
 	position: absolute;
 	width: 280px;
 }
+
 .cajatexto{
 	width: 100%;
 	padding: 10px 0;
 	margin: 8px 0;
+	margin-top: 20px;
 	border-left: 0;
 	border-top: 0;
 	border-right: 0;
-	border-bottom: 1px solid #999;
+	border-bottom: 1px solid #b55986;
 	outline: none;
 	background: transparent;
+	color: #7c568d;
 }
+
+::-webkit-input-placeholder { color: #b55986; } 
+
 .submit-btn{
-	margin-top: 18px !important;
+	margin-top: 50px !important;
 	width: 85%;
 	padding: 10px 30px;
 	cursor: pointer;
 	display: block;
 	margin: auto;
-	background: linear-gradient(to right, #71BCFA, #B7BDC1);
+	background: linear-gradient(to right, #b55986, #7c568d);
 	border: 0;
 	outline: none;
 	border-radius: 30px;
+	color: rgba(219,219,219, 1);
 }
 
