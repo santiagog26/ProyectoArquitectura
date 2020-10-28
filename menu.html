@@ -30,8 +30,9 @@
         </div>
     </main>
 <!-- administracion -->
+<form action="/cgi-bin/ProyectoArquitecturaBack/registerUsuario.py" method="POST">
     <div id="admi" style="display: none">
-        <form action="/cgi-bin/ProyectoArquitecturaBack/registerUsuario.py" method="POST">
+        
             <section class="form-register">
             <h4>Formulario Registro</h4>
             <input class="controls" type="text" name="documento" placeholder="Documento">
@@ -48,9 +49,8 @@
             <input class="controls" type="password" name="contraseña" placeholder="Contraseña">
             <button type="button " class="submit-btn">Registrar</button>
         </section>
-        </form>
-        
     </div>
+</form>
 </body>
 <script src="js/js.js"> </script>
 </html>
