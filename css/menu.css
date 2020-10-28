@@ -78,7 +78,7 @@ header{
 #logo{
     position: fixed;
     width: 100%;
-    max-width: 1500px;
+    padding-right: 20px;
     top: 14px;
     font-size: 26px;
     text-align: right;
