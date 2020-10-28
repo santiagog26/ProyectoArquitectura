@@ -5,15 +5,17 @@
     <title>Menu Lateral Animado Responsive</title>
     <link rel="stylesheet" href="css/icon/css/fontello.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/registro.css">
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <body>
     <main>
         <div class="content-all">
             <header></header>
             <input type="checkbox" id="check">
-            <label for="check" class="icon-menu">Menu</label>
+            <label id="che" for="check" class="icon-menu">Menu</label>
             <div id = "logo">
-                <img src="https://concurvas.com/wp-content/themes/mainteam_Concurvas/imagenes/iconos/LOGO.png" alt="Logo Concurvas" id="logoForm">
+                <img src="https://concurvas.com/wp-content/themes/mainteam_Concurvas/imagenes/iconos/LOGO.png" alt="Logo Concurvas" id="logol">
             </div>
             <nav class="menu">
                 <ul>
@@ -21,10 +23,24 @@
                     <li>Ventas</li>
                     <li>Empaquetado</li>
                     <li>Domiciliarios</li>
-                    <li>Admin</li>
+                    <li id="admin">Admin</li>
                 </ul>
             </nav>
         </div>
     </main>
+<!-- administracion -->
+    <div id="admi" style="display: none">
+        <section class="form-register">
+            <h4>Formulario Registro</h4>
+            <input class="controls" type="text" name="documento" placeholder="Documento">
+            <input class="controls" type="text" name="nombres" placeholder="Nombre">
+            <input class="controls" type="text"  name="apellidos" placeholder="Apellido">
+            <input class="controls" type="email" name="telefono" placeholder="Telefono">
+            <input class="controls" type="email" name="correo" placeholder="Correo">
+            <input class="controls" type="password" name="contraseña" placeholder="Contraseña">
+            <button type="button " class="submit-btn">Registrar</button>
+        </section>
+    </div>
 </body>
+<script src="js/js.js"> </script>
 </html>

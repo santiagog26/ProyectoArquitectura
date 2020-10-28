@@ -10,10 +10,12 @@ main{
     height: auto;
     position: absolute;
 }
-
+#che{
+    margin-left: 10px;
+}
 .content-all{
     width: 100%;
-    max-width: 1000px;
+    max-width: 2000px;
     background:#fd50a1;
     margin: auto;
     margin-top: 80px;
@@ -76,14 +78,14 @@ header{
 #logo{
     position: fixed;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1500px;
     top: 14px;
     font-size: 26px;
     text-align: right;
 }
 
-#logoForm{
-    width: 20%;
+#logol{
+    width: 15%;
 }
 
 
