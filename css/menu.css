@@ -89,7 +89,80 @@ header{
 }
 
 
-
+.slidershow{
+    width: 400px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    z-index: -1;
+  }
+  
+  .middle{
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .navigation{
+    position: absolute;
+    top: 5.2%;
+    left: 88%;
+    transform: translateX(-50%);
+  }
+  
+  .bar{
+    width: 10px;
+    height: 50px;
+    border: 2.5px solid rgb(8, 6, 6);
+    margin: 6px;
+    cursor: pointer;
+  }
+  
+  .bar:hover{
+    background: rgb(141, 25, 25);
+  }
+  
+  input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 0.6s;
+  }
+  
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  #r1:checked ~ .s1{
+    margin-left: 0;
+  }
+  
+  #r2:checked ~ .s1{
+    margin-left: -20%;
+  }
+  
+  #r3:checked ~ .s1{
+    margin-left: -40%;
+  }
+  
+  #r4:checked ~ .s1{
+    margin-left: -60%;
+  }
+  
+  #r5:checked ~ .s1{
+    margin-left: -80%;
+  }
+  
 
 
 

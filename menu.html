@@ -61,22 +61,60 @@
 </div>
 <!-- administracion -->
     <div id="admi" style="display: none">
-        <form action="/cgi-bin/ProyectoArquitecturaBack/registerUsuario.py" method="POST" class="form-register">
-            <h4>Formulario Registro</h4>
-            <input class="controls" type="text" name="documento" placeholder="Documento">
-            <input class="controls" type="text" name="nombres" placeholder="Nombre">
-            <input class="controls" type="text"  name="apellidos" placeholder="Apellido">
-            <input class="controls" type="text" name="telefono" placeholder="Telefono">
-            <input class="controls" type="email" name="correo" placeholder="Correo">
-            <select style = "color:#b55986 !important" class="controls" name="rol" >
-                <option id="rol" value="0">Rol</option> 
-                <option value="1">Vendedor</option> 
-                <option value="2">Domiciliario</option> 
-                <option value="3">Empacador</option> 
-            </select>
-            <input class="controls" type="password" name="contraseña" placeholder="Contraseña">
-            <button type="button " class="submit-btn">Registrar</button>
-        </form>
+    	<div class="slidershow middle">
+			<div class="slides">
+				<input class="avatar" type="radio" name="r" id="r1">
+					<input class="avatar" type="radio" name="r" id="r2">
+					<input class="avatar" type="radio" name="r" id="r3">
+					<input class="avatar" type="radio" name="r" id="r4">
+					<input class="avatar" type="radio" name="r" id="r5">
+					<div class="slide s1">
+					    <form action="/cgi-bin/ProyectoArquitecturaBack/registerUsuario.py" method="POST" class="form-register">
+                            <h4>Registro Usuario</h4>
+                            <input class="controls" type="text" name="documento" placeholder="Documento">
+                            <input class="controls" type="text" name="nombres" placeholder="Nombre">
+                            <input class="controls" type="text"  name="apellidos" placeholder="Apellido">
+                            <input class="controls" type="text" name="telefono" placeholder="Telefono">
+                            <input class="controls" type="email" name="correo" placeholder="Correo">
+                            <select style = "color:#b55986 !important" class="controls" name="rol" >
+                                <option id="rol" value="0">Rol</option> 
+                                <option value="1">Vendedor</option> 
+                                <option value="2">Domiciliario</option> 
+                                <option value="3">Empacador</option> 
+                            </select>
+                            <input class="controls" type="password" name="contraseña" placeholder="Contraseña">
+                            <button type="button " class="submit-btn">Registrar</button>
+                        </form>
+					</div>
+					<div class="slide">
+						<form action="/cgi-bin/ProyectoArquitecturaBack/registerUsuario.py" method="POST" class="form-register">
+                            <h4>Registro Cliente</h4>
+                            <input class="controls" type="text" name="documentoc" placeholder="Documento">
+                            <input class="controls" type="text" name="nombresc" placeholder="Nombre">
+                            <input class="controls" type="text"  name="apellidosc" placeholder="Apellido">
+                            <input class="controls" type="text" name="telefonoc" placeholder="Telefono">
+                            <input class="controls" type="email" name="correoc" placeholder="Correo">
+                            <button type="button " class="submit-btn">Registrar</button>
+                        </form>
+					</div>
+					<div class="slide">
+						<form action="/cgi-bin/ProyectoArquitecturaBack/registerUsuario.py" method="POST" class="form-register">
+                            <h4>Registro Producto</h4>
+                            <input class="controls" type="text" name="idp" placeholder="Id producto">
+                            <input class="controls" type="text" name="nombrep" placeholder="Nombre">
+                            <input class="controls" type="text"  name="descripcionp" placeholder="Descripcion">
+                            <input class="controls" type="text" name="preciop" placeholder="Precio">
+                            <button type="button " class="submit-btn">Registrar</button>
+                        </form>
+					</div>
+				</div>
+				<div class="navigation">
+					<label for="r1" class="bar"></label>
+					<label for="r2" class="bar"></label>
+					<label for="r3" class="bar"></label>
+				</div>
+		    </div>
+        </div>
     </div>
 </body>
 <script src="js/js.js"> </script>
