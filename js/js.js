@@ -1,9 +1,7 @@
 $("#admin").click( function(){
     $('#admi').toggle('slow');
 })
-$(function(){
-    tabla();
-});
+
 
 function tabla(){
     $.ajax({

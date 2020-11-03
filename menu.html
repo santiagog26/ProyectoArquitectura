@@ -44,9 +44,15 @@
                     <th>Vendedor</th>
 				</tr>
 			</thead>
-			<tbody id="tbody">
-
-            </tbody>
+			<tr>
+				{% for row in data %}
+                    <tr>
+                    {%for cell in row%}
+                        <td>{{ cell }}</td>
+                    {%endfor%}
+                    </tr>
+                {%endfor%}
+			</tr>
 		</table>
 	</div>
 </div>
