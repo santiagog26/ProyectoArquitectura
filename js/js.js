@@ -7,7 +7,7 @@ $(function(){
 
 function tabla(){
     $.ajax({
-        utl:'consulta.py',
+        url:'/cgi-bin/ProyectoArquitecturaBack/consulta.py',
         type: 'POST',
         success: function(res){
             var js= JSON.parse(res);
