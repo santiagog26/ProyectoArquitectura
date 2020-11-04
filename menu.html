@@ -110,6 +110,7 @@
 
 <!-- domiciliario -->
 <div id="domi" style="display: none">
+    <!--formulario del registro de pedido, en el cual se envian datos y son dirigidos a domiciliario.py -->
     <form action="/cgi-bin/ProyectoArquitecturaBack/domiciliario.py" method="POST" class="form-register" style="margin-top: 220px;">
         <h4>Domiciliario</h4>
         <input class="controls" type="text" name="documentodo" placeholder="Documento">
@@ -131,6 +132,7 @@
 					<input class="avatar" type="radio" name="r" id="r4">
 					<input class="avatar" type="radio" name="r" id="r5">
 					<div class="slide s1">
+                        <!--formulario del registro de usuario, en el cual se envian datos y son dirigidos a registerUsuario.py -->
 					    <form action="/cgi-bin/ProyectoArquitecturaBack/registerUsuario.py" method="POST" class="form-register">
                             <h4>Registro Usuario</h4>
                             <input class="controls" type="text" name="documento" placeholder="Documento">
@@ -149,6 +151,7 @@
                         </form>
 					</div>
 					<div class="slide">
+                        <!--formulario del registro de clientes, en el cual se envian datos y son dirigidos a registerCliente.py -->
 						<form action="/cgi-bin/ProyectoArquitecturaBack/registerCliente.py" method="POST" class="form-register">
                             <h4>Registro Cliente</h4>
                             <input class="controls" type="text" name="documentoc" placeholder="Documento">
@@ -160,6 +163,7 @@
                         </form>
 					</div>
 					<div class="slide">
+                        <!--formulario del registro de productos, en el cual se envian datos y son dirigidos a registerProducto.py -->
 						<form action="/cgi-bin/ProyectoArquitecturaBack/registerProducto.py" method="POST" class="form-register">
                             <h4>Registro Producto</h4>
                             <input class="controls" type="texto" readonly name="idp" placeholder="Id producto">
