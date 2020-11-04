@@ -62,7 +62,41 @@
 </div>
 <!-- ventas -->
 <div id="vent" style="display: none">
-
+    <div class="slidershow middle">
+            <div class="slides">
+                    <input class="avatar" type="radio" name="r" id="r1">
+                        <input class="avatar" type="radio" name="r" id="r2">
+                        <input class="avatar" type="radio" name="r" id="r3">
+                        <input class="avatar" type="radio" name="r" id="r4">
+                        <div class="slide s1">
+                            <form action="/cgi-bin/ProyectoArquitecturaBack/registerCliente.py" method="POST" class="form-register">
+                                <h4>Registro Cliente</h4>
+                                <input class="controls" type="text" name="documentoc" placeholder="Documento">
+                                <input class="controls" type="text" name="nombresc" placeholder="Nombre">
+                                <input class="controls" type="text"  name="apellidosc" placeholder="Apellido">
+                                <input class="controls" type="text" name="telefonoc" placeholder="Telefono">
+                                <input class="controls" type="email" name="correoc" placeholder="Correo">
+                                <button type="button " class="submit-btn">Registrar</button>
+                            </form>
+                        </div>
+                        <div class="slide">
+                            <form action="/cgi-bin/ProyectoArquitecturaBack/registerProducto.py" method="POST" class="form-register">
+                                <h4>Registro Pedido</h4>
+                                <input class="controls" type="texto" readonly name="idpe" placeholder="Id Pedido">
+                                <input class="controls" type="text" name="fecha" placeholder="Fecha">
+                                <input class="controls" type="text"  name="documentocl" placeholder="Documento Cliente">
+                                <input class="controls" type="text" name="documentoven" placeholder="Documento Vendedor">
+                                <button type="button " class="submit-btn">Registrar</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <label for="r1" class="bar"></label>
+                        <label for="r2" class="bar"></label>
+                        <label for="r3" class="bar"></label>
+                    </div>
+            </div>
+    </div>
 
 </div>
 
