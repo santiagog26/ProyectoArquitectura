@@ -31,11 +31,10 @@
         </div>
     </main>
 <!-- tablita -->
- <form action="/cgi-bin/ProyectoArquitecturaBack/tabla.py" method="POST" >
 
 <div id="tabla" style="">
 	<div  id = " main-container " >
-    
+<form action="/cgi-bin/ProyectoArquitecturaBack/tabla.py" method="POST" >    
 		<table>
 			<thead>
 				<tr>
@@ -48,18 +47,19 @@
 				</tr>
 			</thead>
 			<tr>
-				<th> {{numeroOrden}} </th> 
-                <th> {{fecha}} </th> 
-                <th> {{cliente}} </th> 
-                <th> {{empacador}} </th> 
-                <th> {{vendedor}} </th> 
-                <th> {{domiciliario}} </th>
+				<td> {{numeroOrden}} </td> 
+                <td> {{fecha}} </td> 
+                <td> {{cliente}} </td> 
+                <td> {{empacador}} </td> 
+                <td> {{vendedor}} </td> 
+                <td> {{domiciliario}} </td>
 			</tr>
 		</table>
-	</div>
-</div>
 <button type="button " class="submit-btn">Registrar</button>
 </form>
+	</div>
+</div>
+
 <!-- administracion -->
     <div id="admi" style="display: none">
     	<div class="slidershow middle">
