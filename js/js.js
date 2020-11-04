@@ -1,35 +1,35 @@
 $("#admin").click( function(){
-    $('#admi').show('slow');
-    $('#ini').hide('slow');
-    $('#vent').hide('slow');
-    $('#emp').hide('slow');
-    $('#domi').hide('slow');
+    $('#admi').show();
+    $('#ini').hide();
+    $('#vent').hide();
+    $('#emp').hide();
+    $('#domi').hide();
 })
 $("#inicio").click( function(){
-    $('#admi').hide('slow');
-    $('#ini').show('slow');
-    $('#vent').hide('slow');
-    $('#emp').hide('slow');
-    $('#domi').hide('slow');
+    $('#admi').hide();
+    $('#ini').show();
+    $('#vent').hide();
+    $('#emp').hide();
+    $('#domi').hide();
 })
 $("#ventas").click( function(){
-    $('#admi').hide('slow');
-    $('#ini').hide('slow');
-    $('#vent').show('slow');
-    $('#emp').hide('slow');
-    $('#domi').hide('slow');
+    $('#admi').hide();
+    $('#ini').hide();
+    $('#vent').show();
+    $('#emp').hide();
+    $('#domi').hide();
 })
 $("#empa").click( function(){
-    $('#admi').hide('slow');
-    $('#ini').hide('slow');
-    $('#vent').hide('slow');
-    $('#emp').show('slow');
-    $('#domi').hide('slow');
+    $('#admi').hide();
+    $('#ini').hide();
+    $('#vent').hide();
+    $('#emp').show();
+    $('#domi').hide();
 })
 $("#domici").click( function(){
-    $('#admi').hide('slow');
-    $('#ini').hide('slow');
-    $('#vent').hide('slow');
-    $('#emp').hide('slow');
-    $('#domi').show('slow');
+    $('#admi').hide();
+    $('#ini').hide();
+    $('#vent').hide();
+    $('#emp').hide();
+    $('#domi').show();
 })
