@@ -8,7 +8,7 @@ $(function(){
 function tabla(){
    $.ajax({
         url:'/cgi-bin/ProyectoArquitecturaBack/tabla.py',
-        type:'GET',
+        type:'POST',
         contentType: "text/json; charset=utf-8",
         dataType: "JSON",
         success: function(res){
