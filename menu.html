@@ -21,43 +21,66 @@
             </div>
             <nav class="menu">
                 <ul>
-                    <li>Inicio</li>
-                    <li>Ventas</li>
-                    <li>Empaquetado</li>
-                    <li>Domiciliarios</li>
+                    <li id="inicio">Inicio</li>
+                    <li id="ventas">Ventas</li>
+                    <li id="empa">Empaquetado</li>
+                    <li id="domici">Domiciliarios</li>
                     <li id="admin">Admin</li>
                 </ul>
             </nav>
         </div>
     </main>
-<!-- tablita -->
+<!-- inicio -->
+<div id="ini">
+    <div id="tabla" style="">
+	    <div  id = " main-container " >
+            <form action="/cgi-bin/ProyectoArquitecturaBack/tabla.py" method="POST" >    
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Numero Orden</th>
+                            <th>Fecha</th> 
+                            <th>Cliente</th>
+                            <th>Empaquetado</th> 
+                            <th>Domiciliario</th> 
+                            <th>Vendedor</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td> {{numeroOrden}} </td> 
+                        <td> {{fecha}} </td> 
+                        <td> {{cliente}} </td> 
+                        <td> {{empacador}} </td> 
+                        <td> {{vendedor}} </td> 
+                        <td> {{domiciliario}} </td>
+                    </tr>
+                </table>
+                <button type="button " class="submit-btn">Registrar</button>
+            </form>
+	    </div>
+    </div>
+</div>
+<!-- ventas -->
+<div id="vent">
 
-<div id="tabla" style="">
-	<div  id = " main-container " >
-<form action="/cgi-bin/ProyectoArquitecturaBack/tabla.py" method="POST" >    
-		<table>
-			<thead>
-				<tr>
-					<th>Numero Orden</th>
-                    <th>Fecha</th> 
-                    <th>Cliente</th>
-                    <th>Empaquetado</th> 
-                    <th>Domiciliario</th> 
-                    <th>Vendedor</th>
-				</tr>
-			</thead>
-			<tr>
-				<td> {{numeroOrden}} </td> 
-                <td> {{fecha}} </td> 
-                <td> {{cliente}} </td> 
-                <td> {{empacador}} </td> 
-                <td> {{vendedor}} </td> 
-                <td> {{domiciliario}} </td>
-			</tr>
-		</table>
-<button type="button " class="submit-btn">Registrar</button>
-</form>
-	</div>
+
+</div>
+
+<!-- empaquetado -->
+<div id="emp">
+    <form action="/cgi-bin/ProyectoArquitecturaBack/empaquetado.py" method="POST" class="form-register">
+        <h4>Registro Cliente</h4>
+        <input class="controls" type="text" name="documentoem" placeholder="Documento">
+        <input class="controls" type="text" name="numero_pedido" placeholder="Numero del pedido">
+        <button type="button " class="submit-btn">Registrar</button>
+    </form>
+
+</div>
+
+<!-- domiciliario -->
+<div id="domi">
+
+
 </div>
 
 <!-- administracion -->
