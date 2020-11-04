@@ -64,9 +64,10 @@
 <div id="vent" style="display: none">
     <div class="slidershow middle">
             <div class="slides">
-                        <input class="avatar" type="radio" name="r" id="r7">
-                        <input class="avatar" type="radio" name="r" id="r8">
-                        <div class="slide s1">
+                        <input class="avatar" type="radio" name="r" id="r4">
+					    <input class="avatar" type="radio" name="r" id="r5">
+                        <div class="slide ">
+                            <!--formulario de registro de un pedido, en el cual se envian datos y son dirigidos a registerPedido.py-->
                             <form action="/cgi-bin/ProyectoArquitecturaBack/registerCliente.py" method="POST" class="form-register">
                                 <h4>Registro Cliente</h4>
                                 <input class="controls" type="text" name="documentoc" placeholder="Documento">
@@ -78,6 +79,7 @@
                             </form>
                         </div>
                         <div class="slide">
+                            <!--formulario de registro de un pedido, en el cual se envian datos y son dirigidos a registerPedido.py-->
                             <form action="/cgi-bin/ProyectoArquitecturaBack/registerPedido.py" method="POST" class="form-register">
                                 <h4>Registro Pedido</h4>
                                 <input class="controls" type="texto" readonly name="idpe" placeholder="Id Pedido">
@@ -89,8 +91,8 @@
                         </div>
                     </div>
                     <div class="navigation">
-                        <label for="r7" class="bar"></label>
-                        <label for="r8" class="bar"></label>
+                        <label for="r4" class="bar"></label>
+                        <label for="r5" class="bar"></label>
                     </div>
             </div>
     </div>
@@ -99,6 +101,7 @@
 
 <!-- empaquetado -->
 <div id="emp" style="display: none">
+    <!--formulario de actualizacion de un pedido, en el cual se envian datos y son dirigidos a empaquetado.py-->
     <form action="/cgi-bin/ProyectoArquitecturaBack/empaquetado.py" method="POST" class="form-register" style="margin-top: 220px;">
         <h4>Empaquetado</h4>
         <input class="controls" type="text" name="documentoem" placeholder="Documento">
@@ -110,7 +113,7 @@
 
 <!-- domiciliario -->
 <div id="domi" style="display: none">
-    <!--formulario del registro de pedido, en el cual se envian datos y son dirigidos a domiciliario.py -->
+    <!--formulario de actualizacion de un pedido, en el cual se envian datos y son dirigidos a domiciliario.py -->
     <form action="/cgi-bin/ProyectoArquitecturaBack/domiciliario.py" method="POST" class="form-register" style="margin-top: 220px;">
         <h4>Domiciliario</h4>
         <input class="controls" type="text" name="documentodo" placeholder="Documento">
@@ -129,8 +132,6 @@
 				<input class="avatar" type="radio" name="r" id="r1">
 					<input class="avatar" type="radio" name="r" id="r2">
 					<input class="avatar" type="radio" name="r" id="r3">
-					<input class="avatar" type="radio" name="r" id="r4">
-					<input class="avatar" type="radio" name="r" id="r5">
 					<div class="slide s1">
                         <!--formulario del registro de usuario, en el cual se envian datos y son dirigidos a registerUsuario.py -->
 					    <form action="/cgi-bin/ProyectoArquitecturaBack/registerUsuario.py" method="POST" class="form-register">
