@@ -12,9 +12,6 @@ var app = new Vue({
         correo: '',
         telefono: ''
     },
-    created: function () {
-        this.f();
-    },
     methods: {
         f: function () {
             axios.get(url + '/get_usuarios')
