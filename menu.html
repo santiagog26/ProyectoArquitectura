@@ -49,12 +49,12 @@
                         </tr>
                     </thead>
                     <tr v-for='u in datos'>
-                        <td>{{u.documento}}</td>
-                        <td>{{u.contraseña}}</td>
-                        <td>{{u.nombre}}</td>
-                        <td>{{u.apellido}}</td>
-                        <td>{{u.correo}}</td>
-                        <td>{{u.telefono}}</td>
+                        <td>{{u.numero_orden}}</td>
+                        <td>{{u.fecha}}</td>
+                        <td>{{u.cliente_documento}}</td>
+                        <td>{{u.empaquetado}}</td>
+                        <td>{{u.domicilio}}</td>
+                        <td>{{u.vendedor}}</td>
                     </tr>
                 </table>
                 <button id="inicio" v-on:click="f">Consultar</button>
