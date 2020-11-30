@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/registro.css">
     <link rel="stylesheet" href="css/tabla.css">
     <link href="https://concurvas.com/wp-content/themes/mainteam_Concurvas/imagenes/iconos/concurvas.ico" rel="shortcut icon" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <body>
@@ -32,8 +34,8 @@
     </main>
 <!-- inicio -->
 <div id="ini" style="display: none">
-    <div id="tabla" style="">
-	    <div  id = " main-container " >
+    <div id="tabla">
+	    <div  id = "main-container" >
             <form action="/cgi-bin/ProyectoArquitecturaBack/tabla2.py" method="POST" >    
                 <table>
                     <thead>
@@ -46,8 +48,13 @@
                             <th>Vendedor</th>
                         </tr>
                     </thead>
-                    <tr>
-                        
+                    <tr v-for='u in datos'>
+                        <td>{{u.documento}}</td>
+                        <td>{{u.contraseña}}</td>
+                        <td>{{u.nombre}}</td>
+                        <td>{{u.apellido}}</td>
+                        <td>{{u.correo}}</td>
+                        <td>{{u.telefono}}</td>
                     </tr>
                 </table>
                 <button type="button " class="submit-btn">Consultar</button>
@@ -163,8 +170,8 @@
                             <h4>Registro Producto</h4>
                             <input class="controls" type="texto" readonly name="idp" placeholder="Id producto">
                             <input class="controls" type="text" name="nombrep" placeholder="Nombre">
-                            <input class="controls" type="text"  name="descripcionp" placeholder="Descripcion">
-                            <input class="controls" type="text" name="preciop" placeholder="Precio">
+                            <input class="controls" type="text" name="                            <input class="controls" type="text"  name="descripcionp" placeholder="Descripcion">
+preciop" placeholder="Precio">
                             <button type="button " class="submit-btn">Registrar</button>
                         </form>
 					</div>
