@@ -23,14 +23,6 @@ var app = new Vue({
                     console.log('Get list users', this.datos);
                 })
                 .catch(error => console.error(error));
-        },
-        clear: function () {
-            this.documento = '';
-            this.contra = '';
-            this.nombre = '';
-            this.apellido = '';
-            this.correo = '';
-            this.telefono: ''
         }
     }
 })
