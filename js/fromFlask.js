@@ -30,7 +30,7 @@ var app = new Vue({
             this.nombre = '';
             this.apellido = '';
             this.correo = '';
-            this.telefono: '';
+            this.telefono: ''
         }
     }
 })
