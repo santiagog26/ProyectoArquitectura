@@ -2,7 +2,7 @@ url = 'http://ec2-54-236-54-145.compute-1.amazonaws.com:5000';
 var losdatos = []
 
 var app = new Vue({
-    el: '#app',
+    el: '#ini',
     data: {
         datos: losdatos,
         numero_orden: '',
