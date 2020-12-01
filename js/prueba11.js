@@ -2,7 +2,7 @@ url = 'http://ec2-54-236-54-145.compute-1.amazonaws.com:5000';
 var pedidos_cliente = []
 
 var app2 = new Vue({
-    el: '#gpc',
+    el: '#el',
     data: {
         datos: pedidos_cliente,
         numero_orden: '',
