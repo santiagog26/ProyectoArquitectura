@@ -14,15 +14,24 @@ var app2 = new Vue({
     },
     methods: {
         gpedidos_cliente: function () {
-            const data = {
-                cliente_documento = this.doc_cli
-            };
-            axios.get(url + '/get_pedidos_cliente',data)
+            axios.get(url + '/get_pedidos_cliente',params:{cliente_documento:this.doc_cli})
                 .then(response => {
                     this.datos = response.data.results;
                     console.log('Get list users', this.datos);
                 })
                 .catch(error => console.error(error));
+        },
+        eliminar: function(){
+            path = url + '/eliminar_cliente';
+            axios.delete(path, { headers: {}, data: { documento_cliente: this.Doc } })
+                .then(() => {
+                    this.get_datos();
+                })
+                .catch((error) => {
+                    console.log(error)
+                    this.get_datos();
+                })
+            this.clear_products();
         }
     }
 })
