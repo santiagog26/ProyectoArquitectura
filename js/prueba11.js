@@ -13,15 +13,6 @@ var app2 = new Vue({
         vendedor: ''
     },
     methods: {
-        gpedidos_cliente: function () {
-            data
-            axios.get(url + '/get_pedidos_cliente',{ headers: {}, data: { nombre: this.doc_cli } })
-                .then(response => {
-                    this.datos = response.data.results;
-                    console.log('Get list users', this.datos);
-                })
-                .catch(error => console.error(error));
-        },
         eliminar: function(){
             path = url + '/eliminar_cliente';
             axios.delete(path, { headers: {}, data: { documento_cliente: this.Doc } })
