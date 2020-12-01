@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Concurvas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/icon/css/fontello.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/registro.css">
@@ -34,7 +35,24 @@
     </main>
 <!-- inicio -->
 <div id="ini" style="display: none">
-    <div id="tabla">
+
+<div class="container" id="menuh">
+    <div class="row text-center ">
+        <div class="col-lg-3 ">
+            <button  id="orden" class= "boton bti">Ver Pedido</button>
+        </div>
+        <div class="col-lg-3 ">
+            <button id="b_usuarios" class= "boton bti" type="button " >Ver Usuarios</button>
+        </div>    
+        <div class="col-lg-3 ">
+            <button id="b_clientes" class= "boton bti" type="button " >Ver Clientes</button>
+        </div>
+        <div class="col-lg-3 ">
+            <button  id="b_productos" class= "boton bti" type="button ">Ver Productos</button>
+        </div>
+    </div>
+</div>
+    <div id="tabla_orden" class="tabla" style="display: none">
 	    <div  id = "main-container" >
             <form>    
                 <table>
@@ -55,6 +73,76 @@
                         <td>{{u.empaquetado}}</td>
                         <td>{{u.domicilio}}</td>
                         <td>{{u.vendedor}}</td>
+                    </tr>
+                </table>
+            </form>
+	    </div>
+    </div>
+    <div id="tabla_usuarios" class="tabla" style="display: none">
+	    <div  id = "main-container" >
+            <form>    
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Documento</th>
+                            <th>Nombre</th> 
+                            <th>Apellido</th>
+                            <th>Correo</th> 
+                            <th>Telefono</th> 
+                        </tr>
+                    </thead>
+                    <tr v-for='us in datos'>
+                        <td>{{us.documento}}</td>
+                        <td>{{us.nombre}}</td>
+                        <td>{{us.apellido}}</td>
+                        <td>{{us.correo}}</td>
+                        <td>{{us.telefono}}</td>
+                    </tr>
+                </table>
+            </form>
+	    </div>
+    </div>
+    <div id="tabla_clientes" class="tabla" style="display: none">
+	    <div  id = "main-container" >
+            <form>    
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Documento</th>
+                            <th>Nombre</th> 
+                            <th>Apellido</th>
+                            <th>Correo</th> 
+                            <th>Telefono</th> 
+                        </tr>
+                    </thead>
+                    <tr v-for='c in datos'>
+                        <td>{{c.documento_cliente}}</td>
+                        <td>{{c.nombre}}</td>
+                        <td>{{c.apellido}}</td>
+                        <td>{{c.correo}}</td>
+                        <td>{{c.telefono}}</td>
+                    </tr>
+                </table>
+            </form>
+	    </div>
+    </div>
+    <div id="tabla_producto" class="tabla" style="display: none">
+	    <div  id = "main-container" >
+            <form>    
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id producto</th>
+                            <th>Nombre producto</th> 
+                            <th>Precio</th>
+                            <th>Descripcion</th> 
+                        </tr>
+                    </thead>
+                    <tr v-for='pr in datos'>
+                        <td>{{pr.id_producto}}</td>
+                        <td>{{pr.nombre_producto}}</td>
+                        <td>{{pr.precio}}</td>
+                        <td>{{pr.descripcion}}</td>
                     </tr>
                 </table>
             </form>

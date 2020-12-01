@@ -39,3 +39,16 @@ $("#domici").click( function(){
     $('#emp').hide();
     $('#domi').show();
 })
+
+$("#orden").click( function(){
+    $('#tabla_orden').toggle();
+})
+$("#b_usuarios").click( function(){
+    $('#tabla_usuarios').toggle();
+})
+$("#b_clientes").click( function(){
+    $('#tabla_clientes').toggle();
+})
+$("#b_productos").click( function(){
+    $('#tabla_producto').toggle();
+})
