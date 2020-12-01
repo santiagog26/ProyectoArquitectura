@@ -32,8 +32,26 @@
             </tr>
         </table>
     </div>
-    <div id="get">
-        
+    <div id="gpc">
+        Documento cliente:<input type="text" v-model='cliente_documento'>
+        <table id="tabgpc">
+            <tr>
+                <th>numero orden</th>
+                <th>fecha</th>
+                <th>Documento cliente</th>
+                <th>Empaquetado</th>
+                <th>Domicilio</th>
+                <th>Vendedor</th>
+            </tr>
+            <tr v-for='u in datos'>
+                <td>{{u.numero_orden}}</td>
+                <td>{{u.fecha}}</td>
+                <td>{{u.cliente_documento}}</td>
+                <td>{{u.empaquetado}}</td>
+                <td>{{u.domicilio}}</td>
+                <td>{{u.vendedor}}</td>
+            </tr>
+        </table>
     </div>
     <script src="js/prueba.js"></script>
 </body>
