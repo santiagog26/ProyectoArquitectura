@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="gpc">
+        Documento cliente:<input type="text" v-model='doc_cli'>
+        <button v-on:click='gpedidos_cliente'>Consulta</button>
+        <table id="tabgpc">
+            <tr>
+                <th>numero orden</th>
+                <th>fecha</th>
+                <th>Documento cliente</th>
+                <th>Empaquetado</th>
+                <th>Domicilio</th>
+                <th>Vendedor</th>
+            </tr>
+            <tr v-for='u in datos'>
+                <td>{{u.numero_orden}}</td>
+                <td>{{u.fecha}}</td>
+                <td>{{u.cliente_documento}}</td>
+                <td>{{u.empaquetado}}</td>
+                <td>{{u.domicilio}}</td>
+                <td>{{u.vendedor}}</td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/prueba.js"></script>
+</body>
+
+</html>
