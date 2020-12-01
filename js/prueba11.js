@@ -12,11 +12,10 @@ var app2 = new Vue({
             path = url + '/eliminar_cliente';
             axios.delete(path, { headers: {}, data: { documento_cliente: this.Doc } })
                 .then(() => {
-                    this.get_datos();
+                    console.log(eliminado)
                 })
                 .catch((error) => {
                     console.log(error)
-                    this.get_datos();
                 })
         }
     }
