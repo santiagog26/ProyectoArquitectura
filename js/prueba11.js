@@ -14,7 +14,10 @@ var app2 = new Vue({
     },
     methods: {
         gpedidos_cliente: function () {
-            axios.get(url + '/get_pedidos_cliente',{cliente_documento = this.doc_cli})
+            const data = {
+                cliente_documento = this.doc_cli
+            };
+            axios.get(url + '/get_pedidos_cliente',data)
                 .then(response => {
                     this.datos = response.data.results;
                     console.log('Get list users', this.datos);
