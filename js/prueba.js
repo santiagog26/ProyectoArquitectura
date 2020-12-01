@@ -39,9 +39,6 @@ var app2 = new Vue({
         domicilio: '',
         vendedor: ''
     },
-    created: function () {
-        this.gpedidos_cliente();
-    },
     methods: {
         gpedidos_cliente: function () {
             const data = {
