@@ -5,12 +5,7 @@ var app2 = new Vue({
     el: '#el',
     data: {
         datos: pedidos_cliente,
-        numero_orden: '',
-        fecha: '',
-        cliente_documento: '',
-        empaquetado: '',
-        domicilio: '',
-        vendedor: ''
+        Doc=''
     },
     methods: {
         eliminar: function(){
