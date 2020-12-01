@@ -1,11 +1,10 @@
 url = 'http://ec2-54-236-54-145.compute-1.amazonaws.com:5000';
-var losdatos = []
 var pedidos_cliente = []
 
-var app = new Vue({
-    el: '#ini',
+var app2 = new Vue({
+    el: '#gpc',
     data: {
-        datos: losdatos,
+        datos: pedidos_cliente,
         numero_orden: '',
         fecha: '',
         cliente_documento: '',
@@ -13,12 +12,9 @@ var app = new Vue({
         domicilio: '',
         vendedor: ''
     },
-    created: function () {
-        this.f();
-    },
     methods: {
-        f: function () {
-            axios.get(url + '/get_pedidos')
+        gpedidos_cliente: function () {
+            axios.get(url + '/get_pedidos_cliente',{cliente_documento = this.doc_cli})
                 .then(response => {
                     this.datos = response.data.results;
                     console.log('Get list users', this.datos);
@@ -27,4 +23,3 @@ var app = new Vue({
         }
     }
 })
-
