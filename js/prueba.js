@@ -19,7 +19,7 @@ var app = new Vue({
     },
     methods: {
         f: function () {
-            axios.get(url + '/get_comentarios_cliente',{ headers: {}, data: { documento_cliente: this.doc_cli } })
+            axios.get(url + '/get_pedidos_cliente',{ headers: {}, data: { documento_cliente: this.doc_cli } })
                 .then(response => {
                     this.datos = response.data.results;
                     console.log('Get list users', this.datos);
