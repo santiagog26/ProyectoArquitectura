@@ -6,6 +6,7 @@ $("#admin").click( function(){
     $('#vent').hide();
     $('#emp').hide();
     $('#domi').hide();
+    $('#comentario').hide();
 })
 //al dar clic en el boton inicio se esconden los modulos excepto el de ini 
 $("#inicio").click( function(){
@@ -14,6 +15,7 @@ $("#inicio").click( function(){
     $('#vent').hide();
     $('#emp').hide();
     $('#domi').hide();
+    $('#comentario').hide();
 })
 // al dar clic en el boton ventas se esconden los modulos excepto el de vent 
 $("#ventas").click( function(){
@@ -22,6 +24,7 @@ $("#ventas").click( function(){
     $('#vent').show();
     $('#emp').hide();
     $('#domi').hide();
+    $('#comentario').hide();
 })
 //al dar clic en el boton empa se esconden los modulos excepto el de emp 
 $("#empa").click( function(){
@@ -30,6 +33,7 @@ $("#empa").click( function(){
     $('#vent').hide();
     $('#emp').show();
     $('#domi').hide();
+    $('#comentario').hide();
 })
 //al dar clic en el boton domici se esconden los modulos excepto el de domi 
 $("#domici").click( function(){
@@ -37,7 +41,17 @@ $("#domici").click( function(){
     $('#ini').hide();
     $('#vent').hide();
     $('#emp').hide();
+    $('#comentario').hide();
     $('#domi').show();
+})
+//al dar clic en el boton domici se esconden los modulos excepto el de domi 
+$("#com").click( function(){
+    $('#admi').hide();
+    $('#ini').hide();
+    $('#vent').hide();
+    $('#emp').hide();
+    $('#domi').hide();
+    $('#comentario').show();
 })
 
 $("#orden").click( function(){

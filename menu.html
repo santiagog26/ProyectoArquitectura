@@ -29,6 +29,7 @@
                     <li id="empa">Empaquetado</li>
                     <li id="domici">Domiciliarios</li>
                     <li id="admin">Admin</li>
+                    <li id="com">Comentario</li>
                 </ul>
             </nav>
         </div>
@@ -208,15 +209,17 @@
     </form>
 </div>
 
-<!-- desc -->
-<div id="domi" style="display: none">
-    <!--formulario de actualizacion de un pedido, en el cual se envian datos y son dirigidos a domiciliario.py -->
-    <form action="/cgi-bin/ProyectoArquitecturaBack/domiciliario.py" method="POST" class="form-register" style="margin-top: 220px;">
-        <h4>Domiciliario</h4>
-        <input class="controls" type="text" name="documentodo" placeholder="Documento">
-        <input class="controls" type="text" name="numero_pedido" placeholder="Numero del pedido">
-        <button type="button " class="submit-btn">Registrar</button>
-    </form>
+<!--comentario-->
+<div id="comentario" style="display: none">
+    <div id="produc" class="form-register" style="margin-top: 200px;">
+       <div id="comentario">
+            <h4>Agregar comentario</h4>
+            <input class="controls" type="text" v-model="documento_cliente" name="documentoc" placeholder="Documento Cliente">
+            <input class="controls" type="text" v-model="documento_usuario" name="documentousuario" placeholder="Documento Usuario">
+            <input class="controls" type="text" v-model="comentario" name="comentario" placeholder="Comentario">
+            <button type="button " v-on:click="crear()" class="submit-btn">Agregar</button>
+       </div>
+    </div>
 </div>
 
 <!-- administracion -->
@@ -280,4 +283,5 @@
 </body>
 <script src="js/js.js"> </script>
 <script src="js/fromFlask.js"></script>
+<script src="js/post.js"></script>
 </html>
