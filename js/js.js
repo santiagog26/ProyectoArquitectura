@@ -55,14 +55,26 @@ $("#com").click( function(){
 })
 
 $("#orden").click( function(){
-    $('#tabla_orden').toggle();
+    $('#tabla_orden').show();
+    $('#tabla_usuarios').hide();
+    $('#tabla_clientes').hide();
+    $('#tabla_producto').hide();
 })
 $("#b_usuarios").click( function(){
-    $('#tabla_usuarios').toggle();
+    $('#tabla_usuarios').show();
+    $('#tabla_orden').hide();
+    $('#tabla_clientes').hide();
+    $('#tabla_producto').hide();
 })
 $("#b_clientes").click( function(){
-    $('#tabla_clientes').toggle();
+    $('#tabla_clientes').show();
+    $('#tabla_orden').hide();
+    $('#tabla_usuarios').hide();
+    $('#tabla_producto').hide();
 })
 $("#b_productos").click( function(){
-    $('#tabla_producto').toggle();
+    $('#tabla_producto').show();
+    $('#tabla_clientes').hide();
+    $('#tabla_usuarios').hide();
+    $('#tabla_orden').hide();
 })
