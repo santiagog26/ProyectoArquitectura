@@ -14,7 +14,8 @@ var app = new Vue({
         cliente_documento: '',
         empaquetado: '',
         domicilio: '',
-        vendedor: ''
+        vendedor: '',
+        ord: ''
     },
     created: function () {
         this.f();
@@ -35,6 +36,16 @@ var app = new Vue({
                     console.log('Get list users', this.datos);
                 })
                 .catch(error => console.error(error));
+        },
+        eliminar_orden: function(){
+            path = url + '/eliminar_pedido';
+            axios.delete(path, { headers: {}, data: { numero_orden: this.ord } })
+                .then(() => {
+                    
+                })
+                .catch((error) => {
+                    console.log(error)
+                })
         }
     }
 })

@@ -163,10 +163,19 @@ header{
     margin-left: -20%;
   }
   
+#el{
+  display: flex;
+  justify-content: center;
+}
 
+#el input{
+  height: 40px;
+  margin-top: -10px;
+  margin-left: 1em;
+}
 
-
-
-
-
-
+#el button{
+  margin-left: 1em !important;
+  margin-top: -10px !important;
+  height: 40px !important;
+}
