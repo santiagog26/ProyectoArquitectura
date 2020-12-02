@@ -148,6 +148,14 @@
                 </table>
             </form>
 	    </div>
+         <div id="editarproducto" class="form-register" style="margin-top: 50px;">
+            <h4>Editar Producto</h4>
+            <input class="controls" v-model="id_producto" type="texto"  name="idp" placeholder="Id producto">
+            <input class="controls" v-model="nombre_producto" type="text" name="nombrep" placeholder="Nombre">
+            <input class="controls" v-model="descripcion" type="text" name="descripcionp" placeholder="Descripcion">
+            <input class="controls" v-model="precio" type="text" name="preciop" placeholder="Precio">
+            <button type="button " v-on:click='editar()' class="submit-btn">Editar</button>
+        </div>
     </div>
 </div>
 <!-- ventas -->
@@ -284,4 +292,5 @@
 <script src="js/js.js"> </script>
 <script src="js/fromFlask.js"></script>
 <script src="js/post.js"></script>
+<script src="js/editar.js"></script>
 </html>
