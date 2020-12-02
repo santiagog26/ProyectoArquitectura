@@ -65,7 +65,6 @@
                             <th>Empaquetado</th> 
                             <th>Domiciliario</th> 
                             <th>Vendedor</th>
-                            <th>Opciones</th>
                         </tr>
                     </thead>
                     <tr v-for='u in datos'>
@@ -75,7 +74,6 @@
                         <td>{{u.empaquetado}}</td>
                         <td>{{u.domicilio}}</td>
                         <td>{{u.vendedor}}</td>
-                        <td><button v-on:click="e_pedido(u)">Eliminar</button></td>
                     </tr>
                 </table>
             </form>
@@ -116,6 +114,7 @@
                             <th>Apellido</th>
                             <th>Correo</th> 
                             <th>Telefono</th> 
+                            <th>Opciones</th>
                         </tr>
                     </thead>
                     <tr v-for='c in datos'>
