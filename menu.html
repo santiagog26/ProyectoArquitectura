@@ -36,22 +36,22 @@
 <!-- inicio -->
 <div id="ini" style="display: none">
 
-<div class="container" id="menuh">
-    <div class="row text-center ">
-        <div class="col-lg-3 ">
-            <button  id="orden" class= "boton bti">Ver Pedido</button>
-        </div>
-        <div class="col-lg-3 ">
-            <button id="b_usuarios" class= "boton bti" type="button " >Ver Usuarios</button>
-        </div>    
-        <div class="col-lg-3 ">
-            <button id="b_clientes" class= "boton bti" type="button " >Ver Clientes</button>
-        </div>
-        <div class="col-lg-3 ">
-            <button  id="b_productos" class= "boton bti" type="button ">Ver Productos</button>
+    <div class="container" id="menuh">
+        <div class="row text-center ">
+            <div class="col-lg-3 ">
+                <button  id="orden" class= "boton bti">Ver Pedido</button>
+            </div>
+            <div class="col-lg-3 ">
+                <button id="b_usuarios" class= "boton bti" type="button " >Ver Usuarios</button>
+            </div>    
+            <div class="col-lg-3 ">
+                <button id="b_clientes" class= "boton bti" type="button " >Ver Clientes</button>
+            </div>
+            <div class="col-lg-3 ">
+                <button  id="b_productos" class= "boton bti" type="button ">Ver Productos</button>
+            </div>
         </div>
     </div>
-</div>
     <div id="tabla_orden" class="tabla" style="display: none">
 	    <div  id = "main-container" >
             <form>    
@@ -152,40 +152,39 @@
 <!-- ventas -->
 <div id="vent" style="display: none">
     <div class="slidershow middle">
-            <div class="slides">
-                        <input class="avatar" type="radio" name="r" id="r4">
-					    <input class="avatar" type="radio" name="r" id="r5">
-                        <div class="slide s1">
-                            <form action="/cgi-bin/ProyectoArquitecturaBack/registerCliente.py" method="POST" class="form-register">
-                                <h4>Registro Cliente</h4>
-                                <input class="controls" type="text" name="documentoc" placeholder="Documento">
-                                <input class="controls" type="text" name="nombresc" placeholder="Nombre">
-                                <input class="controls" type="text"  name="apellidosc" placeholder="Apellido">
-                                <input class="controls" type="text" name="telefonoc" placeholder="Telefono">
-                                <input class="controls" type="email" name="correoc" placeholder="Correo">
-                                <button type="button " class="submit-btn">Registrar</button>
-                            </form>
-                        </div>
-                        <div class="slide">
-                            <!--formulario de registro de un pedido, en el cual se envian datos y son dirigidos a registerPedido.py-->
-                            <form action="/cgi-bin/ProyectoArquitecturaBack/registerPedido.py" method="POST" class="form-register">
-                                <h4>Registro Pedido</h4>
-                                <input class="controls" type="texto" readonly name="idpe" placeholder="Id Pedido">
-                                <input class="controls" type="text" name="fecha" placeholder="Fecha">
-                                <input class="controls" type="text"  name="documentocl" placeholder="Documento Cliente">
-                                <input class="controls" type="text" name="documentoven" placeholder="Documento Vendedor">
-                                <button type="button " class="submit-btn">Registrar</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="navigation">
-					<label for="r4" class="bar"></label>
-					<label for="r5" class="bar"></label>
-				</div>
-            </div>
+        <div class="slides">
+                <input class="avatar" type="radio" name="r" id="r4">
+				<input class="avatar" type="radio" name="r" id="r5">
+                <div class="slide s1">
+                    <form action="/cgi-bin/ProyectoArquitecturaBack/registerCliente.py" method="POST" class="form-register">
+                        <h4>Registro Cliente</h4>
+                        <input class="controls" type="text" name="documentoc" placeholder="Documento">
+                        <input class="controls" type="text" name="nombresc" placeholder="Nombre">
+                        <input class="controls" type="text"  name="apellidosc" placeholder="Apellido">
+                        <input class="controls" type="text" name="telefonoc" placeholder="Telefono">
+                        <input class="controls" type="email" name="correoc" placeholder="Correo">
+                        <button type="button " class="submit-btn">Registrar</button>
+                    </form>
+                </div>
+                <div class="slide">
+                    <!--formulario de registro de un pedido, en el cual se envian datos y son dirigidos a registerPedido.py-->
+                    <form action="/cgi-bin/ProyectoArquitecturaBack/registerPedido.py" method="POST" class="form-register">
+                        <h4>Registro Pedido</h4>
+                        <input class="controls" type="texto" readonly name="idpe" placeholder="Id Pedido">
+                        <input class="controls" type="text" name="fecha" placeholder="Fecha">
+                        <input class="controls" type="text"  name="documentocl" placeholder="Documento Cliente">
+                        <input class="controls" type="text" name="documentoven" placeholder="Documento Vendedor">
+                        <button type="button " class="submit-btn">Registrar</button>
+                    </form>
+                </div>
+        </div>
+        <div class="navigation">
+			<label for="r4" class="bar"></label>
+			<label for="r5" class="bar"></label>
+		</div>
     </div>
-
 </div>
+
 
 <!-- empaquetado -->
 <div id="emp" style="display: none">
@@ -196,7 +195,6 @@
         <input class="controls" type="text" name="numero_pedido" placeholder="Numero del pedido">
         <button type="button " class="submit-btn">Registrar</button>
     </form>
-
 </div>
 
 <!-- domiciliario -->
@@ -210,6 +208,15 @@
     </form>
 </div>
 
+<!-- desc -->
+<div id="domi" style="display: none">
+    <!--formulario de actualizacion de un pedido, en el cual se envian datos y son dirigidos a domiciliario.py -->
+    <form action="/cgi-bin/ProyectoArquitecturaBack/domiciliario.py" method="POST" class="form-register" style="margin-top: 220px;">
+        <h4>Domiciliario</h4>
+        <input class="controls" type="text" name="documentodo" placeholder="Documento">
+        <input class="controls" type="text" name="numero_pedido" placeholder="Numero del pedido">
+        <button type="button " class="submit-btn">Registrar</button>
+    </form>
 </div>
 
 <!-- administracion -->
@@ -256,8 +263,8 @@
                             <h4>Registro Producto</h4>
                             <input class="controls" type="texto" readonly name="idp" placeholder="Id producto">
                             <input class="controls" type="text" name="nombrep" placeholder="Nombre">
-                            <input class="controls" type="text" name="                            <input class="controls" type="text"  name="descripcionp" placeholder="Descripcion">
-preciop" placeholder="Precio">
+                            <input class="controls" type="text" name="preciop" placeholder="Precio">                            
+                            <input class="controls" type="text"  name="descripcionp" placeholder="Descripcion">
                             <button type="button " class="submit-btn">Registrar</button>
                         </form>
 					</div>
