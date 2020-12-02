@@ -3,7 +3,7 @@ var losdatos = []
 var pedidos_cliente = []
 
 var app = new Vue({
-    el: '#ini',
+    el: '#gpc',
     data: {
         datos: losdatos,
         numero_orden: '',
@@ -11,14 +11,15 @@ var app = new Vue({
         cliente_documento: '',
         empaquetado: '',
         domicilio: '',
-        vendedor: ''
+        vendedor: '',
+        doc_cli:''
     },
     created: function () {
         this.f();
     },
     methods: {
         f: function () {
-            axios.get(url + '/get_pedidos')
+            axios.get(url + '/get_comentarios_cliente',{ headers: {}, data: { documento_cliente: this.doc_cli } })
                 .then(response => {
                     this.datos = response.data.results;
                     console.log('Get list users', this.datos);
