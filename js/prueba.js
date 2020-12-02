@@ -14,9 +14,6 @@ var app = new Vue({
         vendedor: '',
         doc_cli:''
     },
-    created: function () {
-        this.f();
-    },
     methods: {
         f: function () {
             axios.get(url + '/get_pedidos_cliente',{ headers: {}, data: { documento_cliente: this.doc_cli } })
