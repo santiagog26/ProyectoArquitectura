@@ -34,6 +34,16 @@ var app = new Vue({
                     console.log('Get list users', this.datos);
                 })
                 .catch(error => console.error(error));
+        },
+        e_pedido: function(){
+            path = url + '/eliminar_cliente/' + u.numero_orden;
+            axios.delete(path)
+                .then(() => {
+                    console.log("Eliminado");
+                })
+                .catch((error) => {
+                    console.log(error)
+                })
         }
     }
 })
