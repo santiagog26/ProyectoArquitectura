@@ -24,11 +24,10 @@
             <tr v-for='u in datos'>
                 <td>{{u.numero_orden}}</td>
                 <td>{{u.fecha}}</td>
-                <td>{{u.cliente_documento}}</td>
+                <td v-on:click='f(u)'>{{u.cliente_documento}}</td>
                 <td>{{u.empaquetado}}</td>
                 <td>{{u.domicilio}}</td>
                 <td>{{u.vendedor}}</td>
-                <td v-on:click='f(u)'>Cliente</td>
             </tr>
         </table>
     </div>
