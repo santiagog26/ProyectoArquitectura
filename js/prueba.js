@@ -24,7 +24,7 @@ var app = new Vue({
                     console.log('Get list users', this.datos);
                 })
                 .catch(error => console.error(error));
-        }
+        },
         f: function (u) {
             axios.get(url + '/get_pedidos_cliente/' + u.cliente_documento)
                 .then(response => {
