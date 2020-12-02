@@ -11,12 +11,22 @@ var app = new Vue({
         cliente_documento: '',
         empaquetado: '',
         domicilio: '',
-        vendedor: '',
-        doc_cli:''
+        vendedor: ''
+    },
+    created:{
+        this.traer();
     },
     methods: {
-        f: function () {
-            axios.get(url + '/get_pedidos_cliente',{ headers: {}, data: { documento_cliente: this.doc_cli } })
+        traer: function(){
+            axios.get(url + '/get_pedidos')
+                .then(response => {
+                    this.datos = response.data.results;
+                    console.log('Get list users', this.datos);
+                })
+                .catch(error => console.error(error));
+        }
+        f: function (u) {
+            axios.get(url + '/get_pedidos_cliente/' + u)
                 .then(response => {
                     this.datos = response.data.results;
                     console.log('Get list users', this.datos);
