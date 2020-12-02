@@ -59,22 +59,33 @@ $("#orden").click( function(){
     $('#tabla_usuarios').hide();
     $('#tabla_clientes').hide();
     $('#tabla_producto').hide();
+    $('#tabla_comentarios').hide();
 })
 $("#b_usuarios").click( function(){
     $('#tabla_usuarios').show();
     $('#tabla_orden').hide();
     $('#tabla_clientes').hide();
     $('#tabla_producto').hide();
+    $('#tabla_comentarios').hide();
 })
 $("#b_clientes").click( function(){
     $('#tabla_clientes').show();
     $('#tabla_orden').hide();
     $('#tabla_usuarios').hide();
     $('#tabla_producto').hide();
+    $('#tabla_comentarios').hide();
 })
 $("#b_productos").click( function(){
     $('#tabla_producto').show();
     $('#tabla_clientes').hide();
     $('#tabla_usuarios').hide();
     $('#tabla_orden').hide();
+    $('#tabla_comentarios').hide();
+})
+$("#b_comentarios").click( function(){
+    $('#tabla_producto').hide();
+    $('#tabla_clientes').hide();
+    $('#tabla_usuarios').hide();
+    $('#tabla_orden').hide();
+    $('#tabla_comentarios').show();
 })

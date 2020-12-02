@@ -37,19 +37,22 @@
 <!-- inicio -->
 <div id="ini" style="display: none">
 
-    <div class="container" id="menuh">
-        <div class="row text-center ">
-            <div class="col-lg-3 ">
+    <div class="container " id="menuh">
+        <div class="row text-center  " id="menuh2">
+            <div class="col-lg-2 ">
                 <button  id="orden" class= "boton bti">Ver Pedido</button>
             </div>
-            <div class="col-lg-3 ">
+            <div class="col-lg-2 ">
                 <button id="b_usuarios" class= "boton bti" type="button " >Ver Usuarios</button>
             </div>    
-            <div class="col-lg-3 ">
+            <div class="col-lg-2 ">
                 <button id="b_clientes" class= "boton bti" type="button " >Ver Clientes</button>
             </div>
-            <div class="col-lg-3 ">
+            <div class="col-lg-2 ">
                 <button  id="b_productos" class= "boton bti" type="button ">Ver Productos</button>
+            </div>
+            <div class="col-lg-2 ">
+                <button  id="b_comentarios" class= "boton bti" type="button ">Ver Comentarios</button>
             </div>
         </div>
     </div>
@@ -122,6 +125,26 @@
                         <td>{{c.apellido}}</td>
                         <td>{{c.correo}}</td>
                         <td>{{c.telefono}}</td>
+                    </tr>
+                </table>
+            </form>
+	    </div>
+    </div>
+    <div id="tabla_comentarios" class="tabla" style="display: none">
+	    <div  id = "main-container" >
+            <form>    
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Comentario</th>
+                            <th>Documento Cliente</th> 
+                            <th>Documento Usuario</th>
+                        </tr>
+                    </thead>
+                    <tr v-for='co in datos'>
+                        <td>{{co.comentario}}</td>
+                        <td>{{co.documento_cliente}}</td>
+                        <td>{{co.documento_usuario}}</td>
                     </tr>
                 </table>
             </form>

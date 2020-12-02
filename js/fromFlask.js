@@ -3,6 +3,7 @@ var losdatos = []
 var losdatos_usuario = []
 var losdatos_clientes = []
 var losdatos_productos = []
+var losdatos_comentarios = []
 
 var app = new Vue({
     el: '#tabla_orden',
@@ -91,6 +92,26 @@ var app = new Vue({
     methods: {
         productos: function () {
             axios.get(url + '/get_producto')
+                .then(response => {
+                    this.datos = response.data.results;
+                    console.log('Get list users', this.datos);
+                })
+                .catch(error => console.error(error));
+        }
+    }
+})
+
+var app = new Vue({
+    el: '#tabla_comentarios',
+    data: {
+        datos: losdatos_comentarios,
+    },
+    created: function () {
+        this.comentarios();
+    },
+    methods: {
+        comentarios: function () {
+            axios.get(url + '/get_comentarios')
                 .then(response => {
                     this.datos = response.data.results;
                     console.log('Get list users', this.datos);
