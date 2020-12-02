@@ -13,7 +13,7 @@ var app = new Vue({
         domicilio: '',
         vendedor: ''
     },
-    created:{
+    created: function () {
         this.traer();
     },
     methods: {
